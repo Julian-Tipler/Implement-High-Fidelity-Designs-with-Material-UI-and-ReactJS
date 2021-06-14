@@ -8,12 +8,19 @@ const arcOrange = "#FFBA60";
 export default createMuiTheme({
     palette: {
         common: {
-            arcBlue: "#0B72B9",
-            arcOrange: "#FFBA60"
+            arcBlue: `${arcBlue}`,
+            arcOrange: `${arcOrange}`
         },
         primary: {
-            main: ""
+            main: `${arcBlue}`
+        },
+        secondary: {
+            main: `${arcOrange}`
+        }
+    },
+    typography: {
+        h3: {
+            fontWeight: 100
         }
     }
-
 })
